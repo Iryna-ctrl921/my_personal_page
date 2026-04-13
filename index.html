@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя особиста сторінка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="project.html">Мій 3D Проєкт</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn">Змінити тему</button>
+    </nav>
+
+    <header id="hero" class="fullscreen-section">
+        <div class="hero-content">
+            <h1 class="main-title">Ірина Захарова</h1>
+            <blockquote class="quote">
+                "Якщо твої мрії не лякають тебе, то вони занадто малі" — Невідомий автор
+            </blockquote>
+            <div class="traits-container">
+                <div class="trait-box">Наполеглива</div>
+                <div class="trait-box">Цілеспрямована</div>
+                <div class="trait-box">Відповідальна</div>
+            </div>
+            <a href="mailto:your.email@example.com" class="email-box">irazakharova2007@gmail.com</a>
+        </div>
+    </header>
+
+    <section id="studies" class="fullscreen-section">
+        <h2>Навчальні семестри</h2>
+        <div class="table-controls">
+            <button class="btn active" onclick="showTable(1)">Перший семестр(осінь 2024)</button>
+            <button class="btn" onclick="showTable(2)">Другий семестр(весна 2025)</button>
+            <button class="btn" onclick="showTable(3)">Третій семестр(осінь 2025)</button>
+        </div>
+        
+        <div class="tables-container">
+            <table id="table-1" class="active-table">
+                <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
+                <tr><td>1</td><td>Алгоритмізація та програмування</td><td>Сенько А.В.</td><td>88</td><td>В</td></tr>
+                <tr><td>2</td><td>Аналітична геометрія</td><td>Морачковська І.О.</td><td>97</td><td>А</td></tr>
+                <tr><td>3</td><td>Історія та культура України</td><td>Красіков М.М.</td><td>100</td><td>А</td></tr>
+                <tr><td>4</td><td>Математичний аналіз</td><td>Лінник Г.Б.</td><td>90</td><td>А</td></tr>
+                <tr><td>5</td><td>Архітектура обчислювальних систем</td><td>Водка О.О.</td><td>93</td><td>А</td></tr>
+                <tr><td>6</td><td>Вступ за спеціальністю.Ознайомча практика</td><td>Шеліхова І.Б.</td><td>94</td><td>А</td></tr>
+                <tr><td>7</td><td>Іноземна мова</td><td>Новицька Д.Є.</td><td>90</td><td>А</td></tr>
+                <tr><td>8</td><td>Фізичне виховання</td><td>Ширяєва С.В.</td><td>100</td><td>А</td></tr>
+            </table>
+            <table id="table-2" style="display: none;">
+                <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
+                <tr><th>1</th><th>Дискретна математика</th><th>Татарінова О.А.</th><th>100</th><th>А</th></tr>
+                <tr><th>2</th><th>Лінійна алгебра</th><th>Морачковська І.О.</th><th>100</th><th>А</th></tr>
+                <tr><th>3</th><th>Об'єктно-орієнтоване програмування та проєктування</th><th>Розова Л.В.</th><th>98</th><th>А</th></tr>
+                <tr><th>4</th><th>Спеціальні глави вищої математики</th><th>Лінник Г.Б.</th><th>99</th><th>А</th></tr>
+                <tr><th>5</th><th>Українська мова(професійного спрямування)</th><th>Писарська Н.В.</th><th>95</th><th>А</th></tr>
+                <tr><th>6</th><th>Іноземна мова</th><th>Орда О.Ф.</th><th>100</th><th>А</th></tr>
+                <tr><th>7</th><th>Операційні системи</th><th>Мєтєльов В.О.</th><th>98</th><th>А</th></tr>
+                <tr><th>8</th><th>Фізичне виховання</th><th>Ширяєва С.В.</th><th>100</th><th>А</th></tr> 
+            </table>
+            <table id="table-3" style="display: none;">
+                <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
+                <tr><th>1</th><th>Математична логіка, теорія алгоритмів та структури даних</th><th>Татарінова О.А.</th><th>90</th><th>А</th></tr>
+                <tr><th>2</th><th>Нарисна геометрія в задачах візуалізації</th><th>Федченко Г.В.</th><th>92</th><th>А</th></tr>
+                <tr><th>3</th><th>Організація баз даних</th><th>Мартиненко Г.Ю.</th><th>100</th><th>А</th></tr>
+                <tr><th>4</th><th>Програмування GUI</th><th>Дашкевич А.О.</th><th>99</th><th>А</th></tr>
+                <tr><th>5</th><th>Технології програмування</th><th>Шаповалова М.І.</th><th>94</th><th>А</th></tr>
+                <tr><th>6</th><th>Іноземна мова</th><th>Картун Н.О.</th><th>95</th><th>А</th></tr>
+                <tr><th>7</th><th>Фізичне виховання</th><th>Ширяєва С.В.</th><th>100</th><th>А</th></tr>
+                <tr><td>8</td><td>Правознавство</td><td>Кузьменко О.В.</td><td>100</td><td>А</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="movies" class="content-section">
+        <h2>Улюблені фільми та шоу</h2>
+        <div class="movies-grid">
+            <a href="https://uk.wikipedia.org/wiki/Зоряний_шлях" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1');">
+                <span>Зоряний шлях (Star Trek)</span>
+            </a>
+            <a href="https://uk.wikipedia.org/wiki/Король_Лев_(фільм,_2019)" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401');">
+                <span>Король Лев (2019)</span>
+            </a>
+            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1');">
+                <span>Матриця</span>
+            </a>
+            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113');">
+                <span>Чорне дзеркало</span>
+            </a>
+            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1505686994434-e3cc5abf1330');">
+                <span>Інтерстеллар</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="moods" class="content-section">
+        <h2>Я у різних настроях</h2>
+        <div class="moods-container">
+            <div class="mood-box">
+                <img src="https://images.unsplash.com/photo-1542596594-649edbc13630" alt="Щаслива">
+                <p>Щаслива</p>
+            </div>
+            <div class="mood-box">
+                <img src="https://images.unsplash.com/photo-1501139083538-0139583c060f" alt="Сумна">
+                <p>Сумна</p>
+            </div>
+            <div class="mood-box">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Зараз">
+                <p>Зараз</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="city" class="content-section">
+        <h2>Про моє місто — Кременчук</h2>
+        <div class="city-info">
+            <p>Кременчук — велике індустріальне місто на річці Дніпро. Відоме своїми мостами, машинобудівними заводами (зокрема АвтоКрАЗ) та красивими парками вздовж набережної. Тут багато мальовничих місць та цікавих локацій для відпочинку.</p>
+        </div>
+        
+        <div class="slideshow-container">
+            <img id="slide-img" src="images/kremenchuk1.jpg" alt="Кременчук 1">
+            <button class="slide-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slide-btn next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84861.85966601445!2d33.351272!3d49.063141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75321528640ed%3A0x63394b3c00ea468e!2zS3JlbWVuY2h1aywgUG9sdGF2YSBPYmxhc3QsIDM5NjAw!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+     <footer class="footer">
+        <p class="muted tiny">
+          Made by Iryna Zakharova • HTML/CSS/JS • 2026 
+        </p>
+      </footer>
+</body>
+</html>
