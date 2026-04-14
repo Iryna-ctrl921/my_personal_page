@@ -189,41 +189,49 @@ nav a:hover {
     border-color: transparent;
 }
 
-.table-wrapper, .table-container {
+.table-wrapper {
     width: 100%;
-    max-width: 100%;
-    overflow-x: auto;          
-    display: block;            
-    -webkit-overflow-scrolling: touch; 
+    max-width: 100vw;
+    overflow-x: auto; 
+    display: block;
+    -webkit-overflow-scrolling: touch;
     margin: 20px 0;
-    border-radius: 10px;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
-table { 
-    width: 100%; 
-    min-width: 650px;  
-    max-width: 800px;       
-    table-layout: auto;        
-    border-collapse: collapse; 
-    background: var(--table-bg); 
-    margin-top: 20px;
+.table-wrapper table {
+    min-width: 600px; 
+    border-collapse: collapse !important; 
+    table-layout: fixed !important; 
+    outline: none;
+    isolation: isolate;
 }
 
-th, td { 
-    padding: 12px 15px; 
-    border: 1px solid var(--table-border); 
+.table-wrapper th, .table-wrapper td {
+    padding: 12px 10px;
+    white-space: normal !important; 
     text-align: center;
-    white-space: nowrap;       
+    border: 1px solid var(--table-border) !important;
+    vertical-align: middle;
 }
+
+/* Фіксуємо ширину колонок (сума 100%) */
+.table-wrapper th:nth-child(1), .table-wrapper td:nth-child(1) { width: 40px; }  /* № */
+.table-wrapper th:nth-child(2), .table-wrapper td:nth-child(2) { width: auto; }  /* Дисципліна забере решту */
+.table-wrapper th:nth-child(3), .table-wrapper td:nth-child(3) { width: 180px; } /* Викладач */
+.table-wrapper th:nth-child(4), .table-wrapper td:nth-child(4) { width: 60px; }  /* Бал */
+.table-wrapper th:nth-child(5), .table-wrapper td:nth-child(5) { width: 70px; }  /* ECTS */
 
 th {
-    background-color: var(--table-header); 
-    color: var(--nav-text) 
+    background-color: var(--table-header) !important; 
+    color: var(--nav-text) !important;
 }
 
 td {
-    background-color: var(--table-bg); 
-    color: var(--text-color);
+    background-color: var(--table-bg) !important; 
+    color: var(--text-color) !important;
 }
 
 /* Фільми (Сітка) */
@@ -390,6 +398,14 @@ td {
     .nav-links { flex-direction: column; gap: 10px; }
     .traits-container { flex-direction: column; }
     table { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    #studies {
+        background-attachment: scroll !important; 
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
 }
 
 @media (max-width: 600px) {
