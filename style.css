@@ -217,12 +217,11 @@ nav a:hover {
     vertical-align: middle;
 }
 
-/* Фіксуємо ширину колонок (сума 100%) */
-.table-wrapper th:nth-child(1), .table-wrapper td:nth-child(1) { width: 40px; }  /* № */
-.table-wrapper th:nth-child(2), .table-wrapper td:nth-child(2) { width: auto; }  /* Дисципліна забере решту */
-.table-wrapper th:nth-child(3), .table-wrapper td:nth-child(3) { width: 180px; } /* Викладач */
-.table-wrapper th:nth-child(4), .table-wrapper td:nth-child(4) { width: 60px; }  /* Бал */
-.table-wrapper th:nth-child(5), .table-wrapper td:nth-child(5) { width: 70px; }  /* ECTS */
+.table-wrapper th:nth-child(1), .table-wrapper td:nth-child(1) { width: 40px; }  
+.table-wrapper th:nth-child(2), .table-wrapper td:nth-child(2) { width: auto; } 
+.table-wrapper th:nth-child(3), .table-wrapper td:nth-child(3) { width: 180px; } 
+.table-wrapper th:nth-child(4), .table-wrapper td:nth-child(4) { width: 60px; } 
+.table-wrapper th:nth-child(5), .table-wrapper td:nth-child(5) { width: 70px; } 
 
 th {
     background-color: var(--table-header) !important; 
