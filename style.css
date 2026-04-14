@@ -189,27 +189,31 @@ nav a:hover {
     border-color: transparent;
 }
 
-table { 
-    width: 100%;          
-    max-width: 800px;     
-    table-layout: fixed;
-    border-collapse: collapse; 
-    background: var(--table-bg); 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    margin-top: 20px; 
+.table-wrapper, .table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;          
+    display: block;            
+    -webkit-overflow-scrolling: touch; 
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-.table-container {
-    width: 100%;
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;
+table { 
+    width: 100%; 
+    min-width: 650px;  
+    max-width: 800px;       
+    table-layout: auto;        
+    border-collapse: collapse; 
+    background: var(--table-bg); 
+    margin-top: 20px;
 }
 
 th, td { 
-    padding: 15px; 
+    padding: 12px 15px; 
     border: 1px solid var(--table-border); 
-    text-align: left; 
-    word-wrap: break-word;
+    text-align: center;
+    white-space: nowrap;       
 }
 
 th {
@@ -217,32 +221,11 @@ th {
     color: var(--nav-text) 
 }
 
-
 td {
     background-color: var(--table-bg); 
     color: var(--text-color);
 }
 
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto; 
-    margin-bottom: 20px;
-    border-radius: 10px;
-    -webkit-overflow-scrolling: touch; 
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 500px; 
-}
-
-th, td {
-    padding: 10px 5px;
-    text-align: center;
-    white-space: normal;
-    word-break: normal;
-}
 /* Фільми (Сітка) */
 .content-section { 
     padding: 80px 20px; 
