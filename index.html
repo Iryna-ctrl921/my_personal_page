@@ -10,7 +10,7 @@
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.html">Головна</a></li>
-            <li><a href="project.html">Мій 3D Проєкт</a></li>
+            <li><a href="project.html">3D-Проєкти</a></li>
         </ul>
         <button id="theme-toggle" class="btn">Змінити тему</button>
     </nav>
@@ -31,7 +31,7 @@
     </header>
 
     <section id="studies" class="fullscreen-section">
-        <h2>Навчальні семестри</h2>
+        <h1>Навчальні семестри</h1>
         <div class="table-controls">
             <button class="btn active" onclick="showTable(1)">Перший семестр(осінь 2024)</button>
             <button class="btn" onclick="showTable(2)">Другий семестр(весна 2025)</button>
@@ -39,6 +39,7 @@
         </div>
         
         <div class="tables-container">
+            <div class="table-wrapper">
             <table id="table-1" class="active-table">
                 <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
                 <tr><td>1</td><td>Алгоритмізація та програмування</td><td>Сенько А.В.</td><td>88</td><td>В</td></tr>
@@ -50,82 +51,101 @@
                 <tr><td>7</td><td>Іноземна мова</td><td>Новицька Д.Є.</td><td>90</td><td>А</td></tr>
                 <tr><td>8</td><td>Фізичне виховання</td><td>Ширяєва С.В.</td><td>100</td><td>А</td></tr>
             </table>
+            </div>
+            <div class="table-wrapper">
             <table id="table-2" style="display: none;">
                 <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
-                <tr><th>1</th><th>Дискретна математика</th><th>Татарінова О.А.</th><th>100</th><th>А</th></tr>
-                <tr><th>2</th><th>Лінійна алгебра</th><th>Морачковська І.О.</th><th>100</th><th>А</th></tr>
-                <tr><th>3</th><th>Об'єктно-орієнтоване програмування та проєктування</th><th>Розова Л.В.</th><th>98</th><th>А</th></tr>
-                <tr><th>4</th><th>Спеціальні глави вищої математики</th><th>Лінник Г.Б.</th><th>99</th><th>А</th></tr>
-                <tr><th>5</th><th>Українська мова(професійного спрямування)</th><th>Писарська Н.В.</th><th>95</th><th>А</th></tr>
-                <tr><th>6</th><th>Іноземна мова</th><th>Орда О.Ф.</th><th>100</th><th>А</th></tr>
-                <tr><th>7</th><th>Операційні системи</th><th>Мєтєльов В.О.</th><th>98</th><th>А</th></tr>
-                <tr><th>8</th><th>Фізичне виховання</th><th>Ширяєва С.В.</th><th>100</th><th>А</th></tr> 
+                <tr><td>1</td><td>Дискретна математика</td><td>Татарінова О.А.</td><td>100</td><td>А</td></tr>
+                <tr><td>2</td><td>Лінійна алгебра</td><td>Морачковська І.О.</td><td>100</td><td>А</td></tr>
+                <tr><td>3</td><td>Об'єктно-орієнтоване програмування та проєктування</td><td>Розова Л.В.</td><td>98</td><td>А</td></tr>
+                <tr><td>4</td><td>Спеціальні глави вищої математики</td><td>Лінник Г.Б.</td><td>99</td><td>А</td></tr>
+                <tr><td>5</td><td>Українська мова(професійного спрямування)</td><td>Писарська Н.В.</td><td>95</td><td>А</td></tr>
+                <tr><td>6</td><td>Іноземна мова</td><td>Орда О.Ф.</td><td>100</td><td>А</td></tr>
+                <tr><td>7</td><td>Операційні системи</td><td>Мєтєльов В.О.</td><td>98</td><td>А</td></tr>
+                <tr><td>8</td><td>Фізичне виховання</td><td>Ширяєва С.В.</td><td>100</td><td>А</td></tr> 
             </table>
+            </div>
+            <div class="table-wrapper">
             <table id="table-3" style="display: none;">
                 <tr><th>№</th><th>Дисципліна</th><th>Викладач</th><th>Бал</th><th>ECTS</th></tr>
-                <tr><th>1</th><th>Математична логіка, теорія алгоритмів та структури даних</th><th>Татарінова О.А.</th><th>90</th><th>А</th></tr>
-                <tr><th>2</th><th>Нарисна геометрія в задачах візуалізації</th><th>Федченко Г.В.</th><th>92</th><th>А</th></tr>
-                <tr><th>3</th><th>Організація баз даних</th><th>Мартиненко Г.Ю.</th><th>100</th><th>А</th></tr>
-                <tr><th>4</th><th>Програмування GUI</th><th>Дашкевич А.О.</th><th>99</th><th>А</th></tr>
-                <tr><th>5</th><th>Технології програмування</th><th>Шаповалова М.І.</th><th>94</th><th>А</th></tr>
-                <tr><th>6</th><th>Іноземна мова</th><th>Картун Н.О.</th><th>95</th><th>А</th></tr>
-                <tr><th>7</th><th>Фізичне виховання</th><th>Ширяєва С.В.</th><th>100</th><th>А</th></tr>
+                <tr><td>1</td><td>Математична логіка, теорія алгоритмів та структури даних</td><td>Татарінова О.А.</td><td>90</td><td>А</td></tr>
+                <tr><td>2</th><td>Нарисна геометрія в задачах візуалізації</td><td>Федченко Г.В.</td><td>92</td><td>А</td></tr>
+                <tr><td>3</th><td>Організація баз даних</td><td>Мартиненко Г.Ю.</td><td>100</td><td>А</th></tr>
+                <tr><td>4</td><td>Програмування GUI</td><td>Дашкевич А.О.</td><td>99</td><td>А</td></tr>
+                <tr><td>5</td><td>Технології програмування</td><td>Шаповалова М.І.</td><td>94</td><td>А</td></tr>
+                <tr><td>6</td><td>Іноземна мова</td><td>Картун Н.О.</td><td>95</td><td>А</td></tr>
+                <tr><td>7</td><td>Фізичне виховання</td><td>Ширяєва С.В.</td><td>100</td><td>А</td></tr>
                 <tr><td>8</td><td>Правознавство</td><td>Кузьменко О.В.</td><td>100</td><td>А</td></tr>
             </table>
+            </div>
         </div>
     </section>
 
     <section id="movies" class="content-section">
-        <h2>Улюблені фільми та шоу</h2>
+        <h1>Улюблені фільми</h1>
         <div class="movies-grid">
-            <a href="https://uk.wikipedia.org/wiki/Зоряний_шлях" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1');">
-                <span>Зоряний шлях (Star Trek)</span>
+            <a href="https://uakino.best/filmy/genre_comedy/4731-zhittya-meta-sobaki.html" target="_blank" class="movie-card" style="background-image: url('https://uakino.best/uploads/mini/poster/13/9bbc3ff1807ef81aaa674369430cfb.jpg');">
+                <span>Життя і мета собаки</span>
             </a>
-            <a href="https://uk.wikipedia.org/wiki/Король_Лев_(фільм,_2019)" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401');">
-                <span>Король Лев (2019)</span>
+            <a href="https://uakino.best/filmy/10127-podorozh-horoshogo-psa.html" target="_blank" class="movie-card" style="background-image: url('https://uakino.best/uploads/mini/poster/b9/e3cd94a2a836848eefb578c931939c.webp');">
+                <span>Подорож хорошого пса</span>
             </a>
-            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1');">
-                <span>Матриця</span>
+            <a href="https://uakino.best/filmy/genre_melodrama/8691-shlyah-dodomu.html" target="_blank" class="movie-card" style="background-image: url('https://uakino.best/uploads/mini/poster/31/b97095548bcc9693a30c12d27d402a.webp');">
+                <span>Шлях додому</span>
             </a>
-            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113');">
-                <span>Чорне дзеркало</span>
+            <a href="https://uakino.best/filmy/genre_drama/1222-popelyushka.html" target="_blank" class="movie-card" style="background-image: url('https://uakino.best/uploads/mini/poster/81/b671844479b237b217b391a9814640.webp');">
+                <span>Попелюшка</span>
             </a>
-            <a href="#" target="_blank" class="movie-card" style="background-image: url('https://images.unsplash.com/photo-1505686994434-e3cc5abf1330');">
-                <span>Інтерстеллар</span>
+            <a href="https://uakino.best/filmy/genre_drama/6635-divo-chudo.html" target="_blank" class="movie-card" style="background-image: url('https://uakino.best/uploads/mini/poster/e8/eff68c004e33016386bd8d3cc2a93a.webp');">
+                <span>Диво</span>
             </a>
         </div>
     </section>
 
     <section id="moods" class="content-section">
-        <h2>Я у різних настроях</h2>
+        <h1>Я у різних настроях</h1>
         <div class="moods-container">
             <div class="mood-box">
-                <img src="https://images.unsplash.com/photo-1542596594-649edbc13630" alt="Щаслива">
+                <img src="images/happy.jpg" alt="Щаслива">
                 <p>Щаслива</p>
             </div>
             <div class="mood-box">
-                <img src="https://images.unsplash.com/photo-1501139083538-0139583c060f" alt="Сумна">
+                <img src="images/sad.jpg" alt="Сумна">
                 <p>Сумна</p>
             </div>
             <div class="mood-box">
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Зараз">
+                <img src="images/now.jpg" alt="Зараз">
                 <p>Зараз</p>
             </div>
         </div>
     </section>
 
-    <section id="city" class="content-section">
-        <h2>Про моє місто — Кременчук</h2>
-        <div class="city-info">
-            <p>Кременчук — велике індустріальне місто на річці Дніпро. Відоме своїми мостами, машинобудівними заводами (зокрема АвтоКрАЗ) та красивими парками вздовж набережної. Тут багато мальовничих місць та цікавих локацій для відпочинку.</p>
-        </div>
-        
+   <section class="city-box-container">
+    <h1>Моє місто</h1>
+    <div class="city-info-box">
+        <p>
+        На обох берегах Дніпра, в самому серці України, розташувалося 
+        самобутнє місто Кременчук Полтавської області. Поєднавши воєдино 
+        багатовікову історію, промислову могутність, культурну різноманітність, 
+        дивовижну природу, він вважається місцем тяжіння людей, бізнесу, нових 
+        ідей. Це не просто населений пункт, а складний, суперечливий, проте 
+        напрочуд цілісний «організм», який живе своїм ритмом, зберігаючи 
+        унікальний характер.
+
+        Складається з лівобережної та правобережної частин, з’єднаних між собою 
+        Крюківським мостом. Включає два адміністративні райони (Автозаводський, 
+        Крюківський). Через населений пункт, який при досить невеликій ширині 
+        (близько 8 км) значно витягнутий із півночі на південь, проходять важливі 
+        автомобільні дороги «Олександрія – Харків», «Дніпро – Київ».
+        </p>
+    </div>
+        <h1>Фотогалерея міста</h1>
         <div class="slideshow-container">
             <img id="slide-img" src="images/kremenchuk1.jpg" alt="Кременчук 1">
             <button class="slide-btn prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="slide-btn next" onclick="changeSlide(1)">&#10095;</button>
         </div>
-
+        <h1>Мапа</h1>
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84861.85966601445!2d33.351272!3d49.063141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75321528640ed%3A0x63394b3c00ea468e!2zS3JlbWVuY2h1aywgUG9sdGF2YSBPYmxhc3QsIDM5NjAw!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
